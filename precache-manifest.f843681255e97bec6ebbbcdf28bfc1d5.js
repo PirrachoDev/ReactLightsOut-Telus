@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ReactLightsOut-Telus/static/js/runtime~main.8550746c.js"
   },
   {
-    "revision": "40e8b6cf40775cdf33a277e582b9e30e",
+    "revision": "8f94be28da3a28422bc3d3727656913e",
     "url": "/ReactLightsOut-Telus/index.html"
   }
 ];
