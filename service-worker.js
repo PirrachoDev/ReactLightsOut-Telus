@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/reactlightsout-telus/precache-manifest.44e4538c70016ec633dd97ee18ce70cf.js"
+  "/ReactLightsOut-Telus/precache-manifest.86ff2ba1aa5a1db7034e08a0b0ccd9c8.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/reactlightsout-telus/index.html", {
+workbox.routing.registerNavigationRoute("/ReactLightsOut-Telus/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
