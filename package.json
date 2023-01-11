@@ -2,7 +2,7 @@
   "name": "react-lights-out",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pirrachodev.github.io/reactlightsout-telus",
+  "homepage": "https://pirrachodev.github.io/ReactLightsOut-Telus",
   "dependencies": {
     "gh-pages": "^4.0.0",
     "react": "^16.6.0",
