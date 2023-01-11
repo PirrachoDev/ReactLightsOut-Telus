@@ -112,7 +112,7 @@ class Board extends Component {
   render() {
 
     // if the game is won, just show a winning msg & render nothing else
-    let winMsg = "Congratulations! You won!!!";
+    let winMsg = <div><h1>Congratulations!</h1><h2>You won my heart Gaby! ♥ </h2></div>;
     let showBoard = <table className="Board">
     <tbody>
       {
