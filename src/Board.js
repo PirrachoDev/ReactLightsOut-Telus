@@ -88,9 +88,23 @@ class Board extends Component {
 
     // win when every cell is turned off
     // TODO: determine is the game has been won
-    let hasWon = false;
+    function gameIsWon (){
+      let won = false;
+      for(let i = 0; i < board.length; i++) {
+        for(let j = 0; j < board[i].length; j++) {
+          if (board[i][j] === true) {
+            won = false;
+          } else {
+            won = true;
+          }
+        }
+      }
+      return won;
+    }
+    let hasWon = gameIsWon();
 
     this.setState({board, hasWon});
+    console.log(this.state.hasWon);
   }
 
 
@@ -99,28 +113,27 @@ class Board extends Component {
   render() {
 
     // if the game is won, just show a winning msg & render nothing else
-
+    let winMsg = "Congratulations! You won!!!";
+    let showBoard = <table className="Board">
+    <tbody>
+      {
+        this.state.board.map(
+          (y, i) => <tr key={i}>
+            {y.map(
+              (x, j) => {
+                let coord = `${i}-${j}`;
+                return <Cell key={coord} isLit={x} flipCellsAroundMe={() => this.flipCellsAround(coord)}/>
+              }
+            )}
+          </tr>
+        )
+      }
+    </tbody>
+  </table>;
     // TODO
 
     // make table board
-    return (
-      <table className="Board">
-        <tbody>
-          {
-            this.state.board.map(
-              (y, i) => <tr key={i}>
-                {y.map(
-                  (x, j) => {
-                    let coord = `${i}-${j}`;
-                    return <Cell key={coord} isLit={x} flipCellsAroundMe={() => this.flipCellsAround(coord)}/>
-                  }
-                )}
-              </tr>
-            )
-          }
-        </tbody>
-      </table>
-    )
+    return this.state.hasWon ? winMsg : showBoard;
 
     // TODO
   }
