@@ -101,10 +101,9 @@ class Board extends Component {
       }
       return won;
     }
-    let hasWon = gameIsWon();
+    let hasWon = board.every(row => row.every(cell => !cell));
 
     this.setState({board, hasWon});
-    console.log(this.state.hasWon);
   }
 
 
