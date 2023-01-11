@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ReactLightsOut-Telus/precache-manifest.86ff2ba1aa5a1db7034e08a0b0ccd9c8.js"
+  "/ReactLightsOut-Telus/precache-manifest.8fa6cae9c76954d15ea2eec46adebe6a.js"
 );
 
 workbox.clientsClaim();
