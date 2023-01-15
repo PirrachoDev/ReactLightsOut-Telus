@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import Cell from "./Cell";
 import './Board.css';
+//HOW TO RESOLVE IT
+//https://www.logicgamesonline.com/lightsout/tutorial.html#:~:text=The%20easiest%20way%20to%20solve,are%20in%20the%20final%20row.
 
 
 /** Game board of Lights out.
@@ -112,7 +114,7 @@ class Board extends Component {
   render() {
 
     // if the game is won, just show a winning msg & render nothing else
-    let winMsg = <div><h1>Congratulations!</h1><h2>You won my heart Gaby! ♥ </h2></div>;
+    let winMsg = <div><h1>Congratulations!</h1><h2>You won!</h2></div>;
     let showBoard = <table className="Board">
     <tbody>
       {
