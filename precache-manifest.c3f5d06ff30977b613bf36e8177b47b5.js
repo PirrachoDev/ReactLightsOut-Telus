@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2343169d84af031f4d17",
+    "revision": "bc86d798bd6666b92d5d",
     "url": "/ReactLightsOut-Telus/static/css/main.fc9131d8.chunk.css"
   },
   {
-    "revision": "2343169d84af031f4d17",
-    "url": "/ReactLightsOut-Telus/static/js/main.2343169d.chunk.js"
+    "revision": "bc86d798bd6666b92d5d",
+    "url": "/ReactLightsOut-Telus/static/js/main.bc86d798.chunk.js"
   },
   {
     "revision": "2a4eb8a055b70f360807",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ReactLightsOut-Telus/static/js/runtime~main.8550746c.js"
   },
   {
-    "revision": "60168124561c8cab65b4a3a367a98785",
+    "revision": "5ae68a9cee2abc567f435fc16ed66a6a",
     "url": "/ReactLightsOut-Telus/index.html"
   }
 ];
